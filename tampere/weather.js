@@ -1,5 +1,5 @@
 //---------------------------------NavigationHandler---------------------------------//
-const MAIN_DATA_SOURCE = 'http://webapi19sa-1.course.tamk.cloud/v1/weather/';
+const MAIN_DATA_SOURCE = 'https://webapi19sa-1.course.tamk.cloud/v1/weather/';
 let dataSource = "";
 let currentView = "";
 let button = 0;
@@ -46,7 +46,7 @@ function getTime(avg){
   else{
     (currentView == "type")? getType(currentType) : getOther(currentType);
   }
-  
+
 }
 
 function sortData(){
@@ -60,7 +60,7 @@ function sortData(){
 //---------------------------------GetData---------------------------------//
 
 function getData() {
-  
+
   fetch(dataSource).then(response => response.json())
                     .then(data => filterData(data))
                     .then(data => {
@@ -84,13 +84,13 @@ function filterData(dataObjects){
 
   const data = [];
   const l = dataObjects.length;
-  
+
   if (getAvg){
     for (let i = 0; i < l; i++) {
       let dataObject = dataObjects[i];
       let type = Object.keys(dataObject)[1];
       let time = new Date(dataObject.date_time);
-      
+
       const tdata = {
         'date': time.toLocaleDateString("en-FI"),
         'time': time.toLocaleTimeString("en-FI"),
@@ -106,7 +106,7 @@ function filterData(dataObjects){
       let dataObject = dataObjects[i];
       let type = Object.keys(dataObject)[2];
       let time = new Date(dataObject.date_time);
-      
+
       const tdata = {
         'date': time.toLocaleDateString("en-FI"),
         'time': time.toLocaleTimeString("en-FI"),
@@ -122,7 +122,7 @@ function filterData(dataObjects){
       let dataObject = dataObjects[i];
       let type = Object.keys(dataObject.data)[0];
       let time = new Date(dataObject.date_time);
-  
+
       const tdata = {
         'date': time.toLocaleDateString("en-FI"),
         'time': time.toLocaleTimeString("en-FI"),
@@ -149,7 +149,7 @@ function dataToHtmlRepresentation(dataObjects) {
   //distribute values
   for (let i = 0; i < l; i++) {
     let dataObject = dataObjects[i];
-    
+
     //get chart values
     xs.unshift(dataObject.time);
     ys.unshift(dataObject.value);
@@ -211,7 +211,7 @@ function handleClicked(view, buttonNumber) {
     currentView = view;
     button = buttonNumber;
   }
-   
+
   let weather = document.getElementById("data-container");
   let info = document.getElementById("info");
   let showChart = document.getElementById("chart");
@@ -221,7 +221,7 @@ function handleClicked(view, buttonNumber) {
   weather.style.display = (currentView != "info")? "block": "none";
   info.style.display = (currentView == "info")? "block": "none";
   showChart.style.display = (currentView =="info" || currentView == "all")? "none": "block";
-  dropdown[0].style.display = (currentView == "other")? "flex": "none";  
+  dropdown[0].style.display = (currentView == "other")? "flex": "none";
   dropdown[1].style.display = (currentView == "type" || currentView == "other")? "flex": "none";
   sort.style.display = (currentView == "info")? "none": "flex";
 
@@ -248,6 +248,6 @@ document.addEventListener("click", e => {
   if (e.target.matches("li")){
     let dropdown = document.getElementsByClassName("dropdown-content");
     dropdown[0].style.display =  "none";
-    dropdown[1].style.display =  "none"; 
+    dropdown[1].style.display =  "none";
   }
 });
