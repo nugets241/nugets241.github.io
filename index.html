@@ -1,133 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - EJ Sobrepeña</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-
-        header {
-            background: #0078d7;
-            color: #fff;
-            padding: 1rem 2rem;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        nav {
-            margin: 1rem 0;
-            text-align: center;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1rem;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .container {
-            padding: 2rem;
-            max-width: 800px;
-            margin: auto;
-        }
-
-        .section {
-            margin-bottom: 2rem;
-        }
-
-        .section h2 {
-            border-bottom: 2px solid #0078d7;
-            padding-bottom: 0.5rem;
-        }
-
-        .projects {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .project {
-            background: #fff;
-            padding: 1rem;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            width: calc(50% - 1rem);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .project img {
-            max-width: 100%;
-            border-radius: 5px;
-        }
-
-        footer {
-            background: #0078d7;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
-        }
-
-        footer p {
-            margin: 0;
-        }
-    </style>
+    <title>Ej Sobrepeña</title>
+    <!--===== Font Awesome =====-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--===== Main CSS =====-->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header>
-        <h1>EJ Sobrepeña - Portfolio</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <div class="container">
-        <section id="about" class="section">
-            <h2>About Me</h2>
-            <p>Hi! I’m EJ Sobrepeña, a passionate software engineering student based in Tampere, Finland. I specialize in creating efficient, user-friendly applications and have a keen interest in web development.</p>
-        </section>
-
-        <section id="projects" class="section">
-            <h2>Projects</h2>
-            <div class="projects">
-                <div class="project">
-                    <img src="placeholder.jpg" alt="Project Thumbnail">
-                    <h3>Project Title 1</h3>
-                    <p>A brief description of the project. Explain the technology stack and purpose.</p>
+    <!--===== Navbar Start =====-->
+    <nav class="navbar">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Logo">EJ</a></div>
+                <div class="links">
+                    <ul class="menu">
+                        <li class="nav-item"><a href="#home" class="nav-link active">Home <span></span></a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About <span></span></a></li>
+                        <li class="nav-item"><a href="#projects" class="nav-link">Projects <span></span></a></li>
+                    </ul>
                 </div>
-                <div class="project">
-                    <img src="placeholder.jpg" alt="Project Thumbnail">
-                    <h3>Project Title 2</h3>
-                    <p>A brief description of the project. Explain the technology stack and purpose.</p>
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
                 </div>
             </div>
-        </section>
-
-        <section id="contact" class="section">
-            <h2>Contact</h2>
-            <p>Feel free to reach out to me via email or connect with me on LinkedIn.</p>
-            <p>Email: <a href="mailto:ej.sobrepena@example.com">ej.sobrepena@example.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/ej-sobrepena">linkedin.com/in/ej-sobrepena</a></p>
-        </section>
-    </div>
-
-    <footer>
-        <p>&copy; 2024 EJ Sobrepeña. All Rights Reserved.</p>
+        </div>
+    </nav>
+    <!--===== Navbar End =====-->
+    <!--===== Home Section Start =====-->
+    <section class="home-section" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="home-text">
+                    <h1>Ej Sobrepeña</h1>
+                    <span>Software Engineering Student</span>
+                    <p>I design and develop user-friendly applications with a practical and efficient approach, always
+                        aiming for simplicity and functionality.</p>
+                    <ul class="header-social"> <!--===== Header Social =====-->
+                        <li><a href="https://github.com/nugets241"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/ej-sobrepena"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/ej.sobrepena.3/"><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                    <!-- <a href="#" class="btn btn-1">purchase now</a> -->
+                </div>
+                <div class="home-image">
+                    <div class="img-box">
+                        <img src="images/hero.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-hero-shape"></div> <!--===== Hero Shape =====-->
+    </section>
+    <!--===== Home Section End =====-->
+    <!--===== About Section Start =====-->
+    <section class="about-section section-padding" id="about">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="section-title text-align">
+                    <h3 class="main-title">About</h3>
+                    <ul class="line">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div> <!--===== Section Title =====-->
+                <div class="about-image">
+                    <div class="img-box">
+                        <img src="images/developer.jpg" alt="">
+                        <div class="about-shape"></div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <p>I am a passionate software engineering student dedicated to crafting intuitive and practical
+                        applications. My strongest skills lie in web and mobile app development, as well as embedded
+                        systems development, where I utilize technologies like React, React Native, JavaScript, Java,
+                        C++, and Figma. I believe in designing software with the user in mind, seamlessly blending
+                        thoughtful design with efficient engineering.</p>
+                    <br>
+                    <p>Problem-solving and debugging are at the core of my work. I approach every project as if I were
+                        the end user, focusing on clear and straightforward solutions. While I value simplicity, I am
+                        also flexible in adapting to client requirements, offering suggestions when appropriate to
+                        achieve the best possible outcomes.</p>
+                    <br>
+                    <p>My ultimate goal is to become a versatile software engineer capable of excelling in various
+                        roles, whether in front-end, back-end, UI/UX, embedded systems, or AI/ML. Currently, I am
+                        improving my prototyping skills by designing a responsive mobile shopping list app using Figma.
+                    </p>
+                    <br>
+                    <p>In addition to coding, I enjoy exploring how things work and building my own solutions. My
+                        curiosity and practical mindset recently led me to build an electric bike, combining cost
+                        efficiency with technical creativity. When I'm not working on software projects, I play guitar,
+                        engage in strategy games like chess and Dota 2, or brainstorm my next engineering challenge.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--===== About Section End =====-->
+    <!--===== Projects Section Start =====-->
+    <section class="project-section section-padding" id="projects">
+        <div class="container">
+            <div class="row">
+                <div class="section-title text-align">
+                    <h3 class="main-title">Projects</h3>
+                    <ul class="line">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div> <!--===== Section Title =====-->
+            </div>
+            <div class="row">
+                <!--===== Project Item Start =====-->
+                <a href="tampere/weatherdata.html" class="project-item" target="_blank">
+                    <div class="project-item-inner">
+                        <div class="icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Weather Data Visualization Tool</h3>
+                        <p>Developed a responsive web application that fetches and displays real-time weather data for Tampere. Utilized HTML, CSS, and JavaScript to create interactive dropdown menus and sorting options. Integrated Chart.js for dynamic data visualization, enhancing user experience and data accessibility.</p>
+                    </div>
+                </a>
+                <!--===== Project Item End =====-->
+            </div>
+        </div>
+    </section>
+    <!--===== Projects Section End =====-->
+    <!--===== Footer Section Start =====-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <p class="copyright-text">&copy; 2024 EJ Sobrepeña. All Rights Reserved.</p>
+            </div>
+        </div>
     </footer>
+    <!--===== Footer Section End =====-->
+    <!--===== Main JS =====-->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
