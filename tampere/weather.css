@@ -1,0 +1,164 @@
+body {
+    background-image: url('Images/weather.jpg');
+    background-size: cover;
+}
+
+/* --------------------------H1-------------------------- */
+
+h1{
+    font-size: 3.5em;
+    margin-top: 10px ;
+    margin-bottom: 10px ;
+}
+
+/* --------------------------Navbar-------------------------- */
+
+.navbar{
+    padding: 10px 0px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.buttonctn button{
+    background-color: #cfe0e8;
+    border-radius: 25%;
+    padding: 5px 15px 5px 15px;
+    font-weight: bold;
+    font-size:medium ;
+    border-color:rgb(239, 239, 239);
+    cursor: pointer;
+}
+
+button:hover {background-color: #87bdd8;}
+
+/* -------------------------Dropdown------------------------- */
+
+.extractn{
+    width: 8cm;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdownctn{
+    min-width: 152px;
+    display:flex;
+    justify-content:flex-end;
+}
+
+.dropdownctn .dropdown {
+    margin: 0px 3px;
+    justify-content: flex-end;
+}
+
+.dropdownctn .dropdown button{
+    background-color: #cfe0e8;
+    border-radius: 3px ;
+    border: 0;
+    padding: 4px 10px;
+    font-weight: bold;
+    font-size:medium ;
+    cursor: pointer;
+}
+
+.dropdown button:hover{background-color: #a5c9db;}
+
+.dropdown-content {
+    display: none;
+    margin-top: 26.4px;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content li {
+    color: black;
+    padding: 7px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+  
+.dropdown-content li:hover{background-color: #ddd;}
+
+#sortbtn{
+    min-width: 93.823px;
+}
+
+#sortbtn button{
+    background-color: #cfe0e8;
+    border-radius: 3px ;
+    cursor: pointer;
+}
+#sortbtn button:hover{
+    background-color: #a5c9db;
+}
+
+#sorticon1{
+    display: none;
+}
+
+/* --------------------------Table-------------------------- */
+
+.tablectn{
+    margin: 5px 0px;
+}
+
+table {
+    width: 100%;    
+}
+
+th {
+    background-color: #3fa8dd;
+    position: sticky;
+    top: 0;
+    border: 1px solid black;
+}
+
+table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 3px 2em;
+    padding-bottom: 3px;
+    text-align: center;
+    background-color:#87bdd8be;
+    font-weight: bold;
+}
+
+.type{
+    text-align: left;
+}
+
+.value{
+    text-align: right;
+}
+
+#data-container {
+    margin: 1em 0em;
+}
+
+/* --------------------------Chart-------------------------- */
+
+#myChart{
+    background-color:#C8D9E0;
+    display: none;
+}
+
+#chart{
+    margin: 10px auto;
+    max-width: 11in;
+}
+
+/* --------------------------Info-------------------------- */
+
+#info{
+    display: none;
+    background-color:rgba(108, 180, 219, 0.807);
+    box-sizing:content-box;
+    border-radius: 20px;
+    padding: 20px 55px;
+    padding-bottom: 40px;
+    font-family: serif;
+}
+
