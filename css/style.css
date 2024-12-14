@@ -1,5 +1,6 @@
 /*===== Google Fonts =====*/
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /*===== Global CSS =====*/
 html {
@@ -18,11 +19,11 @@ html {
 }
 
 body {
-    font-family: "DM Serif Text", serif;
-    font-weight: lighter;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
     font-style: normal;
     font-size: 16px;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     background-color: var(--white);
 }
 
@@ -377,18 +378,17 @@ img {
     padding: 40px;
 }
 
-.about-section .about-image .img-box
-{
+.about-section .about-image .img-box {
     position: relative;
 }
-.about-section .about-image .img-box img
-{
+
+.about-section .about-image .img-box img {
     max-width: 100%;
     width: 100%;
     z-index: 8;
 }
-.about-section .about-image .img-box .about-shape
-{
+
+.about-section .about-image .img-box .about-shape {
     width: 404px;
     height: 525px;
     border-left: 15px solid var(--main-color);
@@ -398,8 +398,8 @@ img {
     left: 0;
     z-index: -1;
 }
-.about-section .about-image .img-box .about-shape::before
-{
+
+.about-section .about-image .img-box .about-shape::before {
     position: absolute;
     content: '';
     width: 15px;
@@ -408,8 +408,8 @@ img {
     bottom: 0;
     right: 0;
 }
-.about-section .about-image .img-box .about-shape::after
-{
+
+.about-section .about-image .img-box .about-shape::after {
     position: absolute;
     content: '';
     width: 104%;
@@ -595,6 +595,7 @@ footer .copyright-text {
 }
 
 @media(max-width: 767px) {
+
     .project-section .project-item,
     .about-section .about-content {
         flex: 0 0 100%;
