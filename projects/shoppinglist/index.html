@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!--===== Main CSS =====-->
     <link rel="stylesheet" href="../../css/style.css">
+    <!--===== Project Page CSS =====-->
+    <link rel="stylesheet" href="../css/project.css">
 </head>
+
 
 <body>
     <!--===== Navbar Start =====-->
@@ -20,9 +23,11 @@
                 <div class="logo"><a href="../../index.html"><img src="../../images/logo.png" alt="Logo">EJ</a></div>
                 <div class="links">
                     <ul class="menu">
-                        <li class="nav-item"><a href="../../index.html#home" class="nav-link">Home <span></span></a></li>
-                        <li class="nav-item"><a href="../../index.html#about" class="nav-link">About <span></span></a></li>
-                        <li class="nav-item"><a href="../../index.html#projects" class="nav-link">Projects <span></span></a></li>
+                        <li class="nav-item"><a href="#overview" class="nav-link active"> Overview <span></span></a></li>
+                        <li class="nav-item"><a href="#tech-stack" class="nav-link"> Tech Stack <span></span></a></li>
+                        <li class="nav-item"><a href="#key-features" class="nav-link"> Key Features <span></span></a></li>
+                        <li class="nav-item"><a href="#achievements" class="nav-link"> Achievements <span></span></a></li>
+                        <li class="nav-item"><a href="#demo" class="nav-link"> Demo <span></span></a></li>
                     </ul>
                 </div>
                 <div class="menu-btn">
@@ -32,89 +37,91 @@
         </div>
     </nav>
     <!--===== Navbar End =====-->
-
     <!--===== Project Section Start =====-->
-    <section class="project-section section-padding" id="project">
+    <div class="section-padding">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="project-content">
-                    <div class="section-title text-align">
-                        <h3 class="main-title">Shopping List Application</h3>
-                        <ul class="line">
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                    <section id="overview">
+                        <h1 class="main-title">Shopping List Application</h1>
+                        <br>
+                        <h2>Overview</h2>
+                        <br>
+                        <p><strong>Objective:</strong> Develop a real-time shopping list app to simplify group shopping tasks by reducing the need for calls or texts. Users can create, update, and share lists collaboratively on a shared platform.</p>
+                        <br>
+                        <p><strong>Role:</strong> Lead Developer and Scrum Master for the React Native app. Designed and created prototypes in Figma. Responsible for over 90% of the app's code, architecture, and design.</p>
+                        <br>
+                        <p><strong>Duration:</strong> September 2024 – December 2024</p>
+                        <br>
+                        <p><strong>Team Size:</strong> React Native App Development: 3 members. Figma Prototyping: 3 members.</p>
+                        <br>
+                    </section>
+
+                    <section id="tech-stack">
+                        <h2>Tech Stack</h2>
+                        <br>
+                        <ul>
+                            <li><strong>Frontend:</strong> React Native, Expo</li>
+                            <li><strong>Backend:</strong> Firebase Firestore, Firebase Cloud Messaging</li>
+                            <li><strong>Storage:</strong> AsyncStorage <p>(for storing user login information)</p></li>
+                            <li><strong>Environment Management:</strong> react-native-dotenv</li>
+                            <li><strong>CI/CD:</strong> Expo EAS</li>
+                            <li><strong>Design Tools:</strong> Figma</li>
                         </ul>
-                    </div> <!--===== Section Title =====-->
-                    <p>A functional shopping list app that allows users to create, update, and share shopping lists in real time.</p>
-                    <br>
-                    <h4>Overview</h4>
-                    <p><strong>Objective:</strong> To develop a functional shopping list app that allows users to create, update, and share shopping lists in real time. The app reduces the need for group communication through calls or texts, providing a shared platform for managing shopping tasks.</p>
-                    <p><strong>Role:</strong> Lead Developer and Scrum Master for the React Native app. Sole designer and prototype creator for the Figma project. Responsible for over 90% of the code, architecture, and design.</p>
-                    <p><strong>Duration:</strong> September 2024 – December 2024</p>
-                    <p><strong>Team Size:</strong> React Native App Development: 3 members (2 developers, 1 scrum master). Figma Prototyping: 3 members.</p>
-                    <br>
-                    <h4>Technologies Used</h4>
-                    <p>Frontend: React Native, Expo</p>
-                    <p>Backend: Firebase Firestore, Firebase Cloud Messaging</p>
-                    <p>Database: AsyncStorage</p>
-                    <p>Environment Management: react-native-dotenv</p>
-                    <p>CI/CD: Expo EAS</p>
-                    <p>Design Tools: Figma</p>
-                    <br>
-                    <h4>Key Features</h4>
-                    <p><strong>User Management:</strong> Simple username-based login (per product owner’s security preference).</p>
-                    <p><strong>Real-Time Collaboration:</strong> Share and edit shopping lists with group members via invitation codes and usernames.</p>
-                    <p><strong>Auto-Sorting:</strong> Automatically organizes list items by completion status and alphabetical order.</p>
-                    <p><strong>Offline Functionality:</strong> Local data storage with AsyncStorage, enabling offline access and auto-login.</p>
-                    <p><strong>Responsive Design:</strong> Reusable UI components for a consistent, maintainable app interface.</p>
-                    <br>
-                    <h4>Unique Features</h4>
-                    <p>Editable list items with modal dialogs for improved usability.</p>
-                    <p>Secure environment variable management using react-native-dotenv.</p>
-                    <p>Continuous integration and deployment with Expo EAS.</p>
-                    <br>
-                    <h4>Challenges and Solutions</h4>
-                    <p><strong>Challenge:</strong> Managing complex state across components for real-time updates.</p>
-                    <p><strong>Solution:</strong> Developed custom hooks (e.g., useListOperations) to simplify state management and ensure consistency.</p>
-                    <p><strong>Challenge:</strong> Handling sensitive environment variables securely.</p>
-                    <p><strong>Solution:</strong> Utilized react-native-dotenv for secure environment management.</p>
-                    <p><strong>Challenge:</strong> Limited team participation during development.</p>
-                    <p><strong>Solution:</strong> Took initiative to complete over 90% of the development work while maintaining open communication with team members.</p>
-                    <br>
-                    <h4>Achievements</h4>
-                    <p>Designed reusable components, reducing code redundancy by 20%.</p>
-                    <p>Achieved a 95% crash-free rate through rigorous testing and debugging.</p>
-                    <p>Increased usability by 30% through clean, intuitive UI and navigation improvements.</p>
-                    <p>Successfully delivered both the React Native app and Figma prototype within the project timeline.</p>
-                    <br>
-                    <h4>Lessons Learned</h4>
-                    <p><strong>Technical Skills:</strong> Strengthened Firebase integration and React Native state management expertise. Gained practical experience with Expo EAS for automated deployment.</p>
-                    <p><strong>Collaboration & Growth:</strong> Enhanced leadership skills by successfully managing dual roles as lead developer and scrum master. Learned the importance of adaptability and taking ownership in team projects.</p>
-                    <br>
-                    <h4>Demo</h4>
-                    <p><strong>Videos:</strong></p>
-                    <p>React Native App Demo: Showcasing key features like real-time collaboration, auto-sorting, and offline functionality.</p>
-                    <p>Figma Prototype Demo: Highlighting the design and user journey based on the client’s SRS.</p>
-                    <br>
-                    <h4>Future Improvements</h4>
-                    <p>Add notification features to alert users of updates to shared lists.</p>
-                    <p>Introduce advanced search and filtering capabilities.</p>
-                    <p>Offer custom themes for a more personalized user experience.</p>
-                    <br>
-                    <h4>Call to Action</h4>
-                    <p>This project highlights my ability to lead development, solve complex challenges, and deliver user-friendly applications. If you'd like to know more or discuss potential opportunities, feel free to reach out!</p>
-                    <br>
-                    <h4>Reflections</h4>
-                    <p><strong>What specific user feedback did you receive about the app’s features or usability?</strong> The product owners appreciated the auto-sorting feature, as it improved focus by prioritizing unpurchased items. They also praised the app's clean and intuitive design, which made it easy to use.</p>
-                    <p><strong>Did you encounter any challenges working in a team? How did you address them?</strong> The main challenge was limited participation from team members, as their focus seemed to be on simply passing the course. I addressed this by taking responsibility for most of the work, ensuring the project’s success while also delivering high-quality results for the team.</p>
-                    <p><strong>How does this project demonstrate your readiness for professional software engineering roles?</strong> This project showcases my technical skills in full-stack development, leadership qualities as a scrum master, and the ability to deliver functional and user-centric solutions. It also highlights my dedication to overcoming challenges and producing results that exceed expectations.</p>
+                        <br>
+                    </section>
+
+                    <section id="key-features">
+                        <h2>Key Features</h2>
+                        <br>
+                        <ul>
+                            <li><strong>User Management:</strong> Simple username-based login (aligned with product owner's security preference).</li>
+                            <li><strong>Real-Time Collaboration:</strong> Users can share and edit shopping lists via invitation codes and usernames.</li>
+                            <li><strong>Auto-Sorting:</strong> Automatically organizes list items by completion status and alphabetical order.</li>
+                            <li><strong>Offline Functionality:</strong> Local data storage using AsyncStorage, enabling auto-login.</li>
+                            <li><strong>Responsive Design:</strong> Reusable UI components ensure consistency and maintainability.</li>
+                        </ul>
+                        <br>
+                    </section>
+
+                    <section id="achievements">
+                        <h2>Achievements</h2>
+                        <br>
+                        <ul>
+                            <li>Designed reusable components, reducing code redundancy by 20%.</li>
+                            <li>Achieved a 95% crash-free rate through rigorous testing and debugging.</li>
+                            <li>Improved usability by 30% through clean, intuitive UI and enhanced navigation.</li>
+                            <li>Successfully delivered both the React Native app and Figma prototype within the project timeline.</li>
+                        </ul>
+                        <br>
+                    </section>
+
+                    <section id="demo">
+                        <h2>Demo</h2>
+                        <div class="demo-videos">
+                            <div class="video-container">
+                                <p>React Native App Demo</p>
+                                <video controls>
+                                    <source src="app-demo.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <a href="https://github.com/nugets241/ExpoFirebaseReactnative-ShoppingList2024" class="btn"><i class="fab fa-github"></i> View in GitHub</a>
+                            </div>
+                            <div class="video-container">
+                                <p>Figma Prototype Demo</p>
+                                <video controls>
+                                    <source src="figma-demo.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <a href="https://www.figma.com/design/gw56wmsgKHbJczSjp0sn38/Shopping-List?node-id=0-1&t=YaGfqcQEbA8Oyy3G-1" class="btn"> <i class="fab fa-figma"></i> View in Figma</a>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
-    </section>
-    <!--===== Project Section End =====-->
-
+    </div>
+    <!--===== project Section End =====-->
     <!--===== Footer Section Start =====-->
     <footer class="footer">
         <div class="container">
@@ -125,7 +132,7 @@
     </footer>
     <!--===== Footer Section End =====-->
     <!--===== Main JS =====-->
-    <script src="../../js/main.js"></script>
+    <script src="../js/project.js"></script>
 </body>
 
 </html>
