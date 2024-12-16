@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --main-color: #8f445f;
+    --hover-color: #c65d83;
+    --shadow-black-100: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --black-900: #000;
+    --black-400: #646f87;
+    --black-100: #f7f7f7;
+    --white: #fff;
+    --black-alpha-100: rgba(0, 0, 0, .05);
+}
+
+/*===== Navbar =====*/
+.navbar .menu .nav-item .nav-link {
+    color: var(--main-color);
+}
+
+.navbar .nav-item .nav-link span {
+    background-color: var(--main-color);
+}
+
+.navbar .nav-item .nav-link span::before {
+    background-color: var(--main-color);
+}
+
+.navbar .nav-item .nav-link span::after {
+    background-color: var(--main-color);
+}
+
+.menu-btn {
+    background-color: var(--main-color);
+    color: var(--white);
+    height: 34px;
+    width: 44px;
+    box-shadow: var(--shadow-black-100);
+    padding: 0;
+    border-radius: 5px;
+    line-height: 34px;
+    text-align: center;
+    color: var(--white);
+    font-size: 17px;
+    display: none;
+}
+
+.navbar.sticky .menu-btn {
+    color: var(--main-color);
+    background-color: var(--white);
+}
+
+/*===== Project =====*/
+.project-content {
+    max-width: 80%;
+    padding: 25px;
+    text-align: justify;
+}
+
+ul {
+    padding-left: 40px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+section {
+    padding-top: 100px;
+    margin-top: -100px;
+}
+
+h1 {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--main-color);
+    text-align: center;
+}
+
+h2,
+h3 {
+    font-family: "DM Serif Text", serif;
+    color: var(--main-color);
+}
+
+/*===== Demo Videos =====*/
+.demo-videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    /* Space between rows */
+    justify-content: space-evenly;
+    /* Ensures even spacing between items */
+    text-align: center;
+    /* Centers the labels */
+    padding: 1rem;
+    /* Optional: Adds padding around the container */
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    /* Matches the video width */
+    margin: 0;
+    /* Ensures no extra margins interfere with spacing */
+}
+
+.video-container p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #333;
+    /* Adjust for readability */
+    font-weight: bold;
+}
+
+video {
+    width: 300px;
+    /* Initial width for normal view */
+    height: 652px;
+    /* Initial height for vertical videos */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    /* Ensures the video fills the container */
+    background-color: black;
+    /* Fills background if aspect ratio doesn't match */
+}
+
+video:fullscreen {
+    width: 100vw;
+    /* Full width of the viewport */
+    height: 100vh;
+    /* Full height of the viewport */
+    object-fit: contain;
+    /* Keeps the video fully visible without cropping */
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    margin: 1rem 0;
+    padding: 15px 40px;
+    border: none;
+    color: var(--white);
+    border-radius: 24px;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 600;
+    transition: all 0.3s ease-out;
+}
+
+.btn i {
+    margin-right: 8px;
+    font-size: 24px;
+}
+
+.btn:hover {
+    color: var(--white);
+    background-color: var(--hover-color);
+}
+
+/*===== Media Queries =====*/
+
+@media (max-width: 991px) {
+    .navbar .menu .nav-item .nav-link {
+        color: var(--white);
+    }
+
+    .project-section .project-item {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .project-content {
+        max-width: 100%;
+    }
+
+    .demo-videos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-container {
+        width: 100%;
+    }
+
+    video {
+        width: 90%;
+        /* Adjust width for smaller screens */
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+}
