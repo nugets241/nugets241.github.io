@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather TAMK</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <script src="weather.js"></script>
+        <link rel="stylesheet" type="text/css" href="weather.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body onload="getAll()">
+        <h1>Weather Tampere</h1>
+        <div class="navbar">
+            <div class="buttonctn">
+                <button class="tablink" onclick="getAll()">All Type</button>
+                <button class="tablink" onclick="getType('temperature', 1)">Temperature</button>
+                <button class="tablink" onclick="getType('wind_speed', 2)">Wind Speed</button>
+                <button class="tablink" onclick="getOther('rain',3)">Other Type</button>
+                <button class="tablink" onclick="handleClicked('info', 4)">Info</button>
+            </div>
+            <div class="extractn">
+                <div class="dropdownctn">
+                    <div class="dropdown">
+                        <button onmouseover="hover(1)" onmouseout="hover(0)">type<i class="fa fa-caret-down"></i></button>
+                        <div onmouseover="hover(1)" onmouseout="hover(0)" class="dropdown-content">
+                          <li onclick="getOther('rain')">Rain</li>
+                          <li onclick="getOther('wind_speed')">Wind Speed</li>
+                          <li onclick="getOther('wind_direction')">Wind Direction</li>
+                          <li onclick="getOther('light')">Light</li>
+                          <li onclick="getOther('temperature')">Temperature</li>
+                          <li onclick="getOther('BMP_temp_1')">BMP Temp 1</li>
+                          <li onclick="getOther('DHT11__temp_1')">DHT11 Temp 1</li>
+                          <li onclick="getOther('DS1820_temp_1')">DS1820 Temp 1</li>
+                          <li onclick="getOther('humidity_out')">Humidity Out</li>
+                          <li onclick="getOther('humidity_in')">Humidity In</li>
+                          <li onclick="getOther('DHT11_hum_1')">DHT11 Hum 1</li>
+                          <li onclick="getOther('Air_pres_1')">Air Pres 1</li>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button onmouseover="hover(2)" onmouseout="hover(0)">time<i class="fa fa-caret-down"></i></button>
+                        <div onmouseover="hover(2)" onmouseout="hover(0)" class="dropdown-content">
+                          <li onclick="getTime()">Now</li>
+                          <li onclick="getTime(23)">24 hours</li>
+                          <li onclick="getTime(47)">48 hours</li>
+                          <li onclick="getTime(71)">72 hours</li>
+                          <li onclick="getTime(167)">1 week</li>
+                        </div>
+                    </div>
+                </div>
+                <div id="sortbtn">
+                    <button onclick="sortData()">time order <i id="sorticon1" class="fa fa-sort-amount-asc"></i><i id="sorticon2" class="fa fa-sort-amount-desc"></i></button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="tablectn">
+            <div id="data-container"></div>
+        </div>
+
+        <div id="info">
+            <h2>Author Informations</h2>
+            <p>Name: <b>Ej Sobrepeña</b></p>
+            <p>Email: <b><a href="mailto:ej.sobrepena@tuni.fi">ej.sobrepena@tuni.fi</a></b></p>
+            <br>
+            <p>The background image used in this website is from <a href="https://pixabay.com/">pixabay.com</a>. The image is free for commercial use.</p>
+            <p>For more info about pixabay license <a href="https://pixabay.com/service/license/">click here</a></p>
+        </div>
+
+        <div id="chart">
+            <canvas id="myChart"></canvas>
+        </div>
+
+    </body>
+</html>
