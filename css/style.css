@@ -414,20 +414,6 @@ img {
     color: var(--black-100);
 }
 
-.projects-item-inner .project-date p {
-    font-size: 14px;
-    color: var(--black-400);
-    margin-top: 10px;
-    line-height: 20px;
-}
-
-.projects-item-inner .project-tech {
-    font-size: 14px;
-    color: var(--black-400);
-    margin-top: 10px;
-    line-height: 20px;
-}
-
 .projects-item-inner .tech-list {
     list-style-type: none;
     padding: 0;
@@ -444,6 +430,11 @@ img {
     border-radius: 50px;
     font-size: 12px;
     display: inline-block;
+}
+
+.projects-item-inner:hover .tech-list li {
+    background-color: var(--white);
+    color: var(--main-color);
 }
 
 /*footer*/
