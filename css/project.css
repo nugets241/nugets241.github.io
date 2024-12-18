@@ -85,55 +85,47 @@ h3 {
 }
 
 /*===== Demo Videos =====*/
-.demo-videos {
+.demo-videos,
+.screenshot-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    /* Space between rows */
     justify-content: space-evenly;
-    /* Ensures even spacing between items */
     text-align: center;
-    /* Centers the labels */
     padding: 1rem;
-    /* Optional: Adds padding around the container */
 }
 
-.video-container {
+.video-container,
+.screenshot-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 300px;
-    /* Matches the video width */
     margin: 0;
-    /* Ensures no extra margins interfere with spacing */
 }
 
-.video-container p {
+
+.video-container p,
+.screenshot-container p {
     margin: 0.5rem 0;
     font-size: 1rem;
     color: #333;
-    /* Adjust for readability */
     font-weight: bold;
 }
 
-video {
+video,
+.screenshot-container img {
     height: 500px;
-    /* Initial height for vertical videos */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     object-fit: cover;
-    /* Ensures the video fills the container */
     background-color: black;
-    /* Fills background if aspect ratio doesn't match */
 }
 
 video:fullscreen {
     width: 100vw;
-    /* Full width of the viewport */
     height: 100vh;
-    /* Full height of the viewport */
     object-fit: contain;
-    /* Keeps the video fully visible without cropping */
 }
 
 .btn {
@@ -180,19 +172,20 @@ video:fullscreen {
         max-width: 100%;
     }
 
-    .demo-videos {
+    .demo-videos,
+    .screenshot-container {
         flex-direction: column;
         align-items: center;
     }
 
-    .video-container {
+    .video-container,
+    .screenshot-container {
         width: 100%;
     }
 
-    video {
+    video,
+    .screenshot-container img {
         width: 90%;
-        /* Adjust width for smaller screens */
         height: auto;
-        /* Maintain aspect ratio */
     }
 }
