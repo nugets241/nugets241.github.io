@@ -150,8 +150,11 @@ video:fullscreen {
 }
 
 .btn:hover {
-    color: var(--white);
     background-color: var(--hover-color);
+}
+
+.btn2 {
+    color: var(--main-color);
 }
 
 /*===== Media Queries =====*/
