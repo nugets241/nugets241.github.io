@@ -444,14 +444,14 @@ img {
 }
 
 .skills-category {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .skills-category h4 {
     font-size: 16px;
     font-weight: 600;
     color: var(--black-900);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -462,18 +462,18 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .skills-list li {
     background-color: var(--main-color);
     color: var(--white);
-    padding: 10px 20px;
-    border-radius: 50px;
+    padding: 8px 10px;
+    border-radius: 16px;
     font-size: 16px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
 }
 
 .skills-list li i {
