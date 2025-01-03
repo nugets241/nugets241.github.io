@@ -52,9 +52,14 @@
                         <li><a href="https://public.tableau.com/app/profile/ej.sobrepe.a/vizzes"><ion-icon
                                     name="logo-tableau"></ion-icon></a>
                         </li>
-                        <li><a href="mailto:sobrepenaej@yahoo.com"><ion-icon name="mail-outline"></ion-icon></a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(event)"><ion-icon name="mail-outline"></ion-icon></a>
+                            <div class="dropdown-menu">
+                                <a id="email-text" href="mailto:sobrepenaej@yahoo.com">sobrepenaej@yahoo.com</a>
+                                <a class="copy-btn" onclick="copyToClipboard()"><i class="far fa-copy"></i></a>
+                            </div>
+                        </li>
                     </ul>
-                    <!-- <a href="#" class="btn btn-1">purchase now</a> -->
                 </div>
                 <div class="home-image">
                     <div class="img-box">

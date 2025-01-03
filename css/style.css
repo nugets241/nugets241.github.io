@@ -327,6 +327,38 @@ img {
     left: 0;
 }
 
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: var(--white);
+    box-shadow: var(--shadow-black-100);
+    padding: 10px;
+    border-radius: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dropdown-menu.show {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu #email-text {
+    margin: 0 10px;
+    padding: 5px 0;
+    font-size: 14px;
+    color: var(--black-900);
+}
+
+.dropdown-menu #email-text:hover {
+    color: var(--main-color);
+}
+
 /*===== About =====*/
 .about-section .about-content {
     max-width: 80%;

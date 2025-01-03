@@ -19,6 +19,37 @@ function linkAction() {
     navMenu.classList.remove("active")
 }
 navLink.forEach(n => n.addEventListener("click", linkAction))
+
+/*===== Dropdown Menu =====*/
+function toggleDropdown(event) {
+    event.preventDefault();
+    const dropdownMenu = event.currentTarget.nextElementSibling;
+    dropdownMenu.classList.toggle('show');
+    document.addEventListener('click', closeDropdownOnClickOutside);
+    dropdownMenu.addEventListener('click', closeDropdownOnClickInside);
+}
+
+function closeDropdownOnClickOutside(event) {
+    const dropdownMenu = document.querySelector('.dropdown-menu.show');
+    if (dropdownMenu && !dropdownMenu.contains(event.target) && !event.target.closest('.dropdown-toggle')) {
+        dropdownMenu.classList.remove('show');
+        document.removeEventListener('click', closeDropdownOnClickOutside);
+        dropdownMenu.removeEventListener('click', closeDropdownOnClickInside);
+    }
+}
+
+function closeDropdownOnClickInside(event) {
+    const dropdownMenu = event.currentTarget;
+    dropdownMenu.classList.remove('show');
+    document.removeEventListener('click', closeDropdownOnClickOutside);
+    dropdownMenu.removeEventListener('click', closeDropdownOnClickInside);
+}
+
+function copyToClipboard() {
+    const emailText = document.getElementById('email-text').innerText;
+    navigator.clipboard.writeText(emailText)
+}
+
 /*===== Scroll Section Active Link =====*/
 
 const Section = document.querySelectorAll('section[id]')
