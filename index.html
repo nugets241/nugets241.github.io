@@ -1,407 +1,502 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ej Sobrepeña</title>
     <!--===== Font Awesome =====-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <!--===== Main CSS =====-->
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
+  <body>
     <!--===== Navbar Start =====-->
     <nav class="navbar">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Logo">EJ</a></div>
-                <div class="links">
-                    <ul class="menu">
-                        <li class="nav-item"><a href="#home" class="nav-link active">Home <span></span></a></li>
-                        <li class="nav-item"><a href="#about" class="nav-link">About <span></span></a></li>
-                        <li class="nav-item"><a href="#projects" class="nav-link">Projects <span></span></a></li>
-                        <li class="nav-item"><a href="#skills" class="nav-link">Skills <span></span></a></li>
-                    </ul>
-                </div>
-                <div class="menu-btn">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Logo" />EJ</a>
+          </div>
+          <div class="links">
+            <ul class="menu">
+              <li class="nav-item">
+                <a href="#home" class="nav-link active">Home <span></span></a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">About <span></span></a>
+              </li>
+              <li class="nav-item">
+                <a href="#projects" class="nav-link">Projects <span></span></a>
+              </li>
+              <li class="nav-item">
+                <a href="#skills" class="nav-link">Skills <span></span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
         </div>
+      </div>
     </nav>
     <!--===== Navbar End =====-->
     <!--===== Home Section Start =====-->
     <section class="home-section" id="home">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="home-text">
-                    <h1>Ej Sobrepeña</h1>
-                    <span>Software Engineering Student</span>
-                    <p>I design and develop user-friendly applications with a practical and efficient approach, always
-                        aiming for simplicity and functionality.</p>
-                    <ul class="header-social"> <!--===== Header Social =====-->
-                        <li><a href="https://github.com/nugets241"><ion-icon name="logo-github"></ion-icon></a></li>
-                        <li><a href="https://www.linkedin.com/in/ej-sobrepena"><ion-icon
-                                    name="logo-linkedin"></ion-icon></a></li>
-                        <li><a href="https://www.instagram.com/ej.sobrepena.3/"><ion-icon
-                                    name="logo-instagram"></ion-icon></a>
-                        </li>
-                        <li><a href="https://public.tableau.com/app/profile/ej.sobrepe.a/vizzes"><ion-icon
-                                    name="logo-tableau"></ion-icon></a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(event)"><ion-icon name="mail-outline"></ion-icon></a>
-                            <div class="dropdown-menu">
-                                <a id="email-text" href="mailto:sobrepenaej@yahoo.com">sobrepenaej@yahoo.com</a>
-                                <a class="copy-btn" onclick="copyToClipboard()"><i class="far fa-copy"></i></a>
-                            </div>
-                        </li>
-                    </ul>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="home-text">
+            <h1>Ej Sobrepeña</h1>
+            <span>Software Engineering Student</span>
+            <p>
+              I design and develop user-friendly applications with a practical
+              and efficient approach, always aiming for simplicity and
+              functionality.
+            </p>
+            <ul class="header-social">
+              <!--===== Header Social =====-->
+              <li>
+                <a href="https://github.com/nugets241"
+                  ><ion-icon name="logo-github"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/ej-sobrepena"
+                  ><ion-icon name="logo-linkedin"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/ej.sobrepena.3/"
+                  ><ion-icon name="logo-instagram"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://public.tableau.com/app/profile/ej.sobrepe.a/vizzes"
+                  ><ion-icon name="logo-tableau"></ion-icon
+                ></a>
+              </li>
+              <li class="dropdown">
+                <a
+                  href="#"
+                  class="dropdown-toggle"
+                  onclick="toggleDropdown(event)"
+                  ><ion-icon name="mail-outline"></ion-icon
+                ></a>
+                <div class="dropdown-menu">
+                  <a id="email-text" href="mailto:sobrepenaej@yahoo.com"
+                    >sobrepenaej@yahoo.com</a
+                  >
+                  <a class="copy-btn" onclick="copyToClipboard()"
+                    ><i class="far fa-copy"></i
+                  ></a>
                 </div>
-                <div class="home-image">
-                    <div class="img-box">
-                        <img src="images/me.png" alt="">
-                    </div>
-                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="home-image">
+            <div class="img-box">
+              <img src="images/me.png" alt="" />
             </div>
+          </div>
         </div>
-        <div class="header-hero-shape"></div> <!--===== Hero Shape =====-->
+      </div>
+      <div class="header-hero-shape"></div>
+      <!--===== Hero Shape =====-->
     </section>
     <!--===== Home Section End =====-->
     <!--===== About Section Start =====-->
     <section class="about-section section-padding" id="about">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="about-content">
-                    <div class="section-title text-align">
-                        <h3 class="main-title">About</h3>
-                        <ul class="line">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div> <!--===== Section Title =====-->
-                    <p>I am a passionate software engineering student dedicated to crafting intuitive and practical
-                        applications. My strongest skills lie in web and mobile app development, as well as embedded
-                        systems development, where I utilize technologies like React, React Native, JavaScript, Java,
-                        C++, and Figma. I believe in designing software with the user in mind, seamlessly blending
-                        thoughtful design with efficient engineering.</p>
-                    <br>
-                    <p>Problem-solving and debugging are at the core of my work. I approach every projects as if I were
-                        the end user, focusing on clear and straightforward solutions. While I value simplicity, I am
-                        also flexible in adapting to client requirements, offering suggestions when appropriate to
-                        achieve the best possible outcomes.</p>
-                    <br>
-                    <p>My ultimate goal is to become a versatile software engineer capable of excelling in various
-                        roles, whether in front-end, back-end, UI/UX, embedded systems, or AI/ML. Currently, I am
-                        refreshing my memory by taking the Responsive Web Design course on freeCodeCamp.
-                    </p>
-                    <br>
-                    <p>In addition to coding, I enjoy exploring how things work and building my own solutions. My
-                        curiosity and practical mindset recently led me to build an electric bike, combining cost
-                        efficiency with technical creativity. When I'm not working on software projects, I play guitar,
-                        engage in strategy games like chess and Dota 2, or brainstorm my next engineering challenge.</p>
-                </div>
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="about-content">
+            <div class="section-title text-align">
+              <h3 class="main-title">About</h3>
+              <ul class="line">
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
             </div>
+            <!--===== Section Title =====-->
+            <p>
+              I am a passionate software engineering student dedicated to
+              crafting intuitive and practical applications. My strongest skills
+              lie in web and mobile app development, as well as embedded systems
+              development, where I utilize technologies like React, React
+              Native, JavaScript, Java, C++, and Figma. I believe in designing
+              software with the user in mind, seamlessly blending thoughtful
+              design with efficient engineering.
+            </p>
+            <br />
+            <p>
+              Problem-solving and debugging are at the core of my work. I
+              approach every projects as if I were the end user, focusing on
+              clear and straightforward solutions. While I value simplicity, I
+              am also flexible in adapting to client requirements, offering
+              suggestions when appropriate to achieve the best possible
+              outcomes.
+            </p>
+            <br />
+            <p>
+              My ultimate goal is to become a versatile software engineer
+              capable of excelling in various roles, whether in front-end,
+              back-end, UI/UX, embedded systems, or AI/ML. Currently, I am
+              refreshing my memory by taking the Responsive Web Design course on
+              freeCodeCamp.
+            </p>
+            <br />
+            <p>
+              In addition to coding, I enjoy exploring how things work and
+              building my own solutions. My curiosity and practical mindset
+              recently led me to build an electric bike, combining cost
+              efficiency with technical creativity. When I'm not working on
+              software projects, I play guitar, engage in strategy games like
+              chess and Dota 2, or brainstorm my next engineering challenge.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
     <!--===== About Section End =====-->
     <!--===== Projects Section Start =====-->
     <section class="projects-section section-padding" id="projects">
-        <div class="container">
-            <div class="row">
-                <div class="section-title text-align">
-                    <h3 class="main-title">Projects</h3>
-                    <ul class="line">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div> <!--===== Section Title =====-->
-            </div>
-            <div class="row">
-                <!--===== Project Item Start =====-->
-                <a href="projects/shoppinglist/index.html" class="projects-item">
-                    <div class="projects-item-inner">
-                        <p class="project-date"> SEP &mdash; DEC 2024 </p>
-                        <div class="icon">
-                            <i class="fas fa-shopping-cart"></i>
-                        </div>
-                        <h3>Shopping List Application</h3>
-                        <p>A real-time shopping list app developed using React Native and Expo, featuring real-time
-                            collaboration, auto-sorting, and offline functionality. Includes a high-fidelity prototype
-                            created in Figma.</p>
-                        <ul class="tech-list">
-                            <li>React Native</li>
-                            <li>Expo</li>
-                            <li>Firebase</li>
-                            <li>Figma</li>
-                        </ul>
-                    </div>
-                </a>
-                <!--===== Project Item End =====-->
-                <!--===== Project Item Start =====-->
-                <a href="projects/sudoku/index.html" class="projects-item">
-                    <div class="projects-item-inner">
-                        <p class="project-date"> MAR &mdash; DEC 2024 </p>
-                        <div class="icon"> <i class="fas fa-gamepad"></i> </div>
-                        <h3>Sudoku Game Application</h3>
-                        <p>An interactive Sudoku game developed in Java using JavaFX, featuring game state persistence
-                            and difficulty selection.</p>
-                        <ul class="tech-list">
-                            <li>Java</li>
-                            <li>JavaFX</li>
-                            <li>Object-Oriented Programming (OOP)</li>
-                            <li>File I/O and Serialization</li>
-                        </ul>
-                    </div>
-                </a>
-                <!--===== Project Item End =====-->
-                <!--===== Project Item Start =====-->
-                <a href="projects/time-tracker/index.html" class="projects-item">
-                    <div class="projects-item-inner">
-                        <p class="project-date"> SEP &mdash; NOV 2023 </p>
-                        <div class="icon"> <i class="fas fa-stopwatch"></i> </div>
-                        <h3>Time Tracking Application</h3>
-                        <p>A web application developed in ReactJS for tracking time spent on various tasks, featuring
-                            task management, time analysis, and activity charts.</p>
-                        <ul class="tech-list">
-                            <li>ReactJS</li>
-                            <li>Vite</li>
-                            <li>Chart.js</li>
-                            <li>JSON Server</li>
-                        </ul>
-                    </div>
-                </a>
-                <!--===== Project Item End =====-->
-                <!--===== Project Item Start =====-->
-                <a href="projects/weather-app/index.html" class="projects-item">
-                    <div class="projects-item-inner">
-                        <p class="project-date"> NOV &mdash; DEC 2023 </p>
-                        <div class="icon">
-                            <i class="fas fa-cloud-sun"></i>
-                        </div>
-                        <h3>Weather Application</h3>
-                        <p>A cross-platform mobile application built with React Native that provides real-time weather
-                            information based on your current location or a specified location.</p>
-                        <ul class="tech-list">
-                            <li>React Native</li>
-                            <li>Expo</li>
-                            <li>OpenWeatherMap API</li>
-                            <li>JavaScript</li>
-                        </ul>
-                    </div>
-                </a>
-                <!--===== Project Item End =====-->
-                <!--===== Project Item Start =====-->
-                <a href="projects/arduino-car/index.html" class="projects-item">
-                    <div class="projects-item-inner">
-                        <p class="project-date"> 2022 &mdash; 2023 </p>
-                        <div class="icon">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                        <h3>Autonomous Arduino Car</h3>
-                        <p>An autonomous robot control system using Arduino, ESP8266, and MQTT for communication,
-                            featuring LIDAR for distance sensing, a compass for orientation, and PWM for motor control.
-                        </p>
-                        <ul class="tech-list">
-                            <li>Arduino</li>
-                            <li>ESP8266</li>
-                            <li>MQTT</li>
-                            <li>C++</li>
-                            <li>JSON</li>
-                        </ul>
-                    </div>
-                </a>
-                <!--===== Project Item End =====-->
-                <!--===== Project Item Start =====-->
-                <a href="projects/todo-app/index.html" class="projects-item">
-                    <div class="projects-item-inner">
-                        <p class="project-date"> SEP &mdash; DEC 2022 </p>
-                        <div class="icon">
-                            <i class="fas fa-tasks"></i>
-                        </div>
-                        <h3>To-Do List Application</h3>
-                        <p>A fullstack ToDo application built using MongoDB, Express, React, and Node.js (MERN stack).
-                            The app allows users to manage tasks efficiently with features like adding, editing, and
-                            deleting tasks.</p>
-                        <ul class="tech-list">
-                            <li>MongoDB</li>
-                            <li>Express</li>
-                            <li>React</li>
-                            <li>Node.js</li>
-                            <li>Docker</li>
-                        </ul>
-                    </div>
-                </a>
-                <!--===== Project Item End =====-->
-                <!--===== Project Item Start =====-->
-                <a href="projects/weather-data-viz/index.html" class="projects-item" target="_blank">
-                    <div class="projects-item-inner">
-                        <p class="project-date"> JAN &mdash; APR 2022 </p>
-                        <div class="icon">
-                            <i class="fas fa-cloud-sun"></i>
-                        </div>
-                        <h3>Weather Data Visualization</h3>
-                        <p>A simple weather data visualization tool built with HTML, CSS, and JavaScript. It fetches
-                            weather data and displays it in a user-friendly format.</p>
-                        <ul class="tech-list">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>Chart.js</li>
-                            <li>REST API</li>
-                        </ul>
-                    </div>
-                </a>
-                <!--===== Project Item End =====-->
-                <!--===== Project Item Start =====-->
-                <a href="projects/hotel-room-booking/index.html" class="projects-item">
-                    <div class="projects-item-inner">
-                        <p class="project-date"> SEP &mdash; DEC 2021 </p>
-                        <div class="icon">
-                            <i class="fas fa-hotel"></i>
-                        </div>
-                        <h3>Hotel Room Booking Program</h3>
-                        <p>A comprehensive hotel room booking system developed in C++ as part of a final assignment for
-                            Programming 1.
-                            It features room reservation, price display, customer search, and more.
-                        </p>
-                        <ul class="tech-list">
-                            <li>C++</li>
-                            <li>Random Number Generation</li>
-                            <li>Input Validation</li>
-                            <li>Structs</li>
-                            <li>Functions</li>
-                        </ul>
-                    </div>
-                </a>
-                <!--===== Project Item End =====-->
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="section-title text-align">
+            <h3 class="main-title">Projects</h3>
+            <ul class="line">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <!--===== Section Title =====-->
         </div>
+        <div class="row">
+          <!--===== Project Item Start =====-->
+          <a href="projects/shoppinglist/index.html" class="projects-item">
+            <div class="projects-item-inner">
+              <p class="project-date">SEP &mdash; DEC 2024</p>
+              <div class="icon">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <h3>Shopping List Application</h3>
+              <p>
+                A real-time shopping list app developed using React Native and
+                Expo, featuring real-time collaboration, auto-sorting, and
+                offline functionality. Includes a high-fidelity prototype
+                created in Figma.
+              </p>
+              <ul class="tech-list">
+                <li>React Native</li>
+                <li>Expo</li>
+                <li>Firebase</li>
+                <li>Figma</li>
+              </ul>
+            </div>
+          </a>
+          <!--===== Project Item End =====-->
+          <!--===== Project Item Start =====-->
+          <a href="projects/sudoku/index.html" class="projects-item">
+            <div class="projects-item-inner">
+              <p class="project-date">MAR &mdash; DEC 2024</p>
+              <div class="icon"><i class="fas fa-gamepad"></i></div>
+              <h3>Sudoku Game Application</h3>
+              <p>
+                An interactive Sudoku game developed in Java using JavaFX,
+                featuring game state persistence and difficulty selection.
+              </p>
+              <ul class="tech-list">
+                <li>Java</li>
+                <li>JavaFX</li>
+                <li>Object-Oriented Programming (OOP)</li>
+                <li>File I/O and Serialization</li>
+              </ul>
+            </div>
+          </a>
+          <!--===== Project Item End =====-->
+          <!--===== Project Item Start =====-->
+          <a href="projects/time-tracker/index.html" class="projects-item">
+            <div class="projects-item-inner">
+              <p class="project-date">SEP &mdash; NOV 2023</p>
+              <div class="icon"><i class="fas fa-stopwatch"></i></div>
+              <h3>Time Tracking Application</h3>
+              <p>
+                A web application developed in ReactJS for tracking time spent
+                on various tasks, featuring task management, time analysis, and
+                activity charts.
+              </p>
+              <ul class="tech-list">
+                <li>ReactJS</li>
+                <li>Vite</li>
+                <li>Chart.js</li>
+                <li>JSON Server</li>
+              </ul>
+            </div>
+          </a>
+          <!--===== Project Item End =====-->
+          <!--===== Project Item Start =====-->
+          <a href="projects/weather-app/index.html" class="projects-item">
+            <div class="projects-item-inner">
+              <p class="project-date">NOV &mdash; DEC 2023</p>
+              <div class="icon">
+                <i class="fas fa-cloud-sun"></i>
+              </div>
+              <h3>Weather Application</h3>
+              <p>
+                A cross-platform mobile application built with React Native that
+                provides real-time weather information based on your current
+                location or a specified location.
+              </p>
+              <ul class="tech-list">
+                <li>React Native</li>
+                <li>Expo</li>
+                <li>OpenWeatherMap API</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+          </a>
+          <!--===== Project Item End =====-->
+          <!--===== Project Item Start =====-->
+          <a href="projects/arduino-car/index.html" class="projects-item">
+            <div class="projects-item-inner">
+              <p class="project-date">2022 &mdash; 2023</p>
+              <div class="icon">
+                <i class="fas fa-robot"></i>
+              </div>
+              <h3>Autonomous Arduino Car</h3>
+              <p>
+                An autonomous robot control system using Arduino, ESP8266, and
+                MQTT for communication, featuring LIDAR for distance sensing, a
+                compass for orientation, and PWM for motor control.
+              </p>
+              <ul class="tech-list">
+                <li>Arduino</li>
+                <li>ESP8266</li>
+                <li>MQTT</li>
+                <li>C++</li>
+                <li>JSON</li>
+              </ul>
+            </div>
+          </a>
+          <!--===== Project Item End =====-->
+          <!--===== Project Item Start =====-->
+          <a href="projects/todo-app/index.html" class="projects-item">
+            <div class="projects-item-inner">
+              <p class="project-date">SEP &mdash; DEC 2022</p>
+              <div class="icon">
+                <i class="fas fa-tasks"></i>
+              </div>
+              <h3>To-Do List Application</h3>
+              <p>
+                A fullstack ToDo application built using MongoDB, Express,
+                React, and Node.js (MERN stack). The app allows users to manage
+                tasks efficiently with features like adding, editing, and
+                deleting tasks.
+              </p>
+              <ul class="tech-list">
+                <li>MongoDB</li>
+                <li>Express</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Docker</li>
+              </ul>
+            </div>
+          </a>
+          <!--===== Project Item End =====-->
+          <!--===== Project Item Start =====-->
+          <a
+            href="projects/weather-data-viz/index.html"
+            class="projects-item"
+            target="_blank"
+          >
+            <div class="projects-item-inner">
+              <p class="project-date">JAN &mdash; APR 2022</p>
+              <div class="icon">
+                <i class="fas fa-cloud-sun"></i>
+              </div>
+              <h3>Weather Data Visualization</h3>
+              <p>
+                A simple weather data visualization tool built with HTML, CSS,
+                and JavaScript. It fetches weather data and displays it in a
+                user-friendly format.
+              </p>
+              <ul class="tech-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Chart.js</li>
+                <li>REST API</li>
+              </ul>
+            </div>
+          </a>
+          <!--===== Project Item End =====-->
+          <!--===== Project Item Start =====-->
+          <a
+            href="projects/hotel-room-booking/index.html"
+            class="projects-item"
+          >
+            <div class="projects-item-inner">
+              <p class="project-date">SEP &mdash; DEC 2021</p>
+              <div class="icon">
+                <i class="fas fa-hotel"></i>
+              </div>
+              <h3>Hotel Room Booking Program</h3>
+              <p>
+                A comprehensive hotel room booking system developed in C++ as
+                part of a final assignment for Programming 1. It features room
+                reservation, price display, customer search, and more.
+              </p>
+              <ul class="tech-list">
+                <li>C++</li>
+                <li>Random Number Generation</li>
+                <li>Input Validation</li>
+                <li>Structs</li>
+                <li>Functions</li>
+              </ul>
+            </div>
+          </a>
+          <!--===== Project Item End =====-->
+        </div>
+      </div>
     </section>
     <!--===== Projects Section End =====-->
     <!--===== Skills Section Start =====-->
     <section class="skills-section section-padding" id="skills">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="skills-content">
-                    <div class="section-title text-align">
-                        <h3 class="main-title">Skills</h3>
-                        <ul class="line">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div> <!--===== Section Title =====-->
-                    <div class="skills-category">
-                        <h4>Programming Languages</h4>
-                        <ul class="skills-list">
-                            <li><i class="fas fa-code"></i> C++</li>
-                            <li><i class="fab fa-java"></i> Java</li>
-                            <li><i class="fab fa-js"></i> JavaScript</li>
-                            <li><i class="fab fa-python"></i> Python</li>
-                            <li><i class="fab fa-apple"></i> Swift</li>
-                        </ul>
-                    </div>
-                    <div class="skills-category">
-                        <h4>Frameworks & Libraries</h4>
-                        <ul class="skills-list">
-                            <li><i class="fab fa-react"></i> React</li>
-                            <li><i class="fab fa-react"></i> React Native</li>
-                            <li><i class="fas fa-network-wired"></i> Express.js</li>
-                            <li><i class="fas fa-code"></i> JavaFX</li>
-                            <li><i class="fas fa-code"></i> QT Design Studio</li>
-                        </ul>
-                    </div>
-                    <div class="skills-category">
-                        <h4>Tools & IDEs</h4>
-                        <ul class="skills-list">
-                            <li><i class="fas fa-microchip"></i> Arduino IDE</li>
-                            <li><i class="fab fa-android"></i> Android Studio</li>
-                            <li><i class="fas fa-code"></i> VS Code</li>
-                            <li><i class="fas fa-code"></i> IntelliJ</li>
-                            <li><i class="fab fa-apple"></i> Xcode</li>
-                            <li><i class="fas fa-terminal"></i> WSL2</li>
-                            <li><i class="fas fa-code"></i> Anaconda</li>
-                            <li><i class="fas fa-code"></i> Spyder IDE</li>
-                            <li><i class="fab fa-figma"></i> Figma</li>
-                        </ul>
-                    </div>
-                    <div class="skills-category">
-                        <h4>Version Control & CI/CD</h4>
-                        <ul class="skills-list">
-                            <li><i class="fab fa-git-alt"></i> Git</li>
-                            <li><i class="fab fa-gitlab"></i> GitLab CI/CD</li>
-                            <li><i class="fab fa-docker"></i> Docker</li>
-                            <li><i class="fab fa-aws"></i> AWS (Basic)</li>
-                        </ul>
-                    </div>
-                    <div class="skills-category">
-                        <h4>Databases</h4>
-                        <ul class="skills-list">
-                            <li><i class="fas fa-database"></i> PostgreSQL</li>
-                            <li><i class="fas fa-database"></i> MongoDB</li>
-                            <li><i class="fas fa-database"></i> SQLite3</li>
-                            <li><i class="fas fa-database"></i> Firebase</li>
-                        </ul>
-                    </div>
-                    <div class="skills-category">
-                        <h4>Testing & Methodologies</h4>
-                        <ul class="skills-list">
-                            <li><i class="fas fa-vial"></i> Junit</li>
-                            <li><i class="fas fa-code"></i> TDD</li>
-                            <li><i class="fas fa-code"></i> Maven</li>
-                            <li><i class="fab fa-jira"></i> Jira</li>
-                            <li><i class="fab fa-confluence"></i> Confluence</li>
-                            <li><i class="fas fa-project-diagram"></i> Scrum</li>
-                            <li><i class="fas fa-brain"></i> Miro</li>
-                        </ul>
-                    </div>
-                    <div class="skills-category">
-                        <h4>Data Visualization</h4>
-                        <ul class="skills-list">
-                            <li><ion-icon name="logo-tableau"></ion-icon> Tableau</li>
-                            <li><i class="fas fa-chart-bar"></i> Chart.js</li>
-                        </ul>
-                    </div>
-                    <div class="skills-category">
-                        <h4>Web Technologies</h4>
-                        <ul class="skills-list">
-                            <li><i class="fab fa-html5"></i> HTML</li>
-                            <li><i class="fab fa-css3-alt"></i> CSS</li>
-                        </ul>
-                    </div>
-                    <div class="skills-category">
-                        <h4>Language Skills</h4>
-                        <ul class="skills-list">
-                            <li><i class="fas fa-language"></i> Iloko (Mother tongue)</li>
-                            <li><i class="fas fa-language"></i> English</li>
-                            <li><i class="fas fa-language"></i> Finnish</li>
-                            <li><i class="fas fa-language"></i> Tagalog</li>
-                            <li><i class="fas fa-language"></i> Cebuano</li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="skills-content">
+            <div class="section-title text-align">
+              <h3 class="main-title">Skills</h3>
+              <ul class="line">
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
             </div>
+            <div class="skills-category">
+              <h4>Programming, Markup & Styling Languages</h4>
+              <ul class="skills-list">
+                <li><i class="fas fa-code"></i> C++</li>
+                <li><i class="fab fa-java"></i> Java</li>
+                <li><i class="fab fa-js"></i> JavaScript</li>
+                <li><i class="fas fa-code"></i> TypeScript</li>
+                <li><i class="fab fa-python"></i> Python</li>
+                <li><i class="fab fa-apple"></i> Swift</li>
+                <li><i class="fab fa-html5"></i> HTML</li>
+                <li><i class="fab fa-css3-alt"></i> CSS</li>
+              </ul>
+            </div>
+            <div class="skills-category">
+              <h4>Frameworks, Libraries & Runtime Environments</h4>
+              <ul class="skills-list">
+                <li><i class="fab fa-react"></i> React</li>
+                <li><i class="fab fa-react"></i> React Native</li>
+                <li><i class="fab fa-js"></i> Next.js</li>
+                <li><i class="fab fa-js"></i> Node.js</li>
+                <li><i class="fab fa-js"></i> Express.js</li>
+                <li><i class="fab fa-css3-alt"></i> Tailwind CSS</li>
+                <li><i class="fas fa-code"></i> JavaFX</li>
+                <li><i class="fas fa-code"></i> QT Design Studio</li>
+              </ul>
+            </div>
+            <div class="skills-category">
+              <h4>Tools & IDEs</h4>
+              <ul class="skills-list">
+                <li><i class="fas fa-microchip"></i> Arduino IDE</li>
+                <li><i class="fab fa-android"></i> Android Studio</li>
+                <li><i class="fas fa-code"></i> VS Code</li>
+                <li><i class="fas fa-code"></i> Visual Studio</li>
+                <li><i class="fas fa-code"></i> IntelliJ</li>
+                <li><i class="fab fa-apple"></i> Xcode</li>
+                <li><i class="fas fa-terminal"></i> WSL2</li>
+                <li><i class="fas fa-code"></i> Anaconda</li>
+                <li><i class="fas fa-code"></i> Spyder IDE</li>
+                <li><i class="fab fa-figma"></i> Figma</li>
+                <li><i class="fas fa-code"></i> Postman</li>
+                <li><i class="fas fa-terminal"></i> Linux Command Line</li>
+                <li><i class="fab fa-microsoft"></i> Microsoft Word</li>
+                <li><i class="fab fa-microsoft"></i> Microsoft Excel</li>
+                <li><i class="fab fa-microsoft"></i> Microsoft PowerPoint</li>
+                <li><i class="fab fa-github"></i> GitHub Copilot</li>
+                <li><i class="fas fa-robot"></i> ChatGPT</li>
+                <li><i class="fab fa-microsoft"></i> Microsoft Copilot</li>
+              </ul>
+            </div>
+            <div class="skills-category">
+              <h4>Version Control, CI/CD & Cloud Services</h4>
+              <ul class="skills-list">
+                <li><i class="fab fa-git-alt"></i> Git</li>
+                <li><i class="fab fa-gitlab"></i> GitLab CI/CD</li>
+                <li><i class="fab fa-docker"></i> Docker</li>
+                <li><i class="fas fa-cloud"></i> CSC Pouta</li>
+                <li><i class="fab fa-aws"></i> AWS (Basic)</li>
+              </ul>
+            </div>
+            <div class="skills-category">
+              <h4>Databases</h4>
+              <ul class="skills-list">
+                <li><i class="fas fa-database"></i> PostgreSQL</li>
+                <li><i class="fas fa-database"></i> MongoDB</li>
+                <li><i class="fas fa-database"></i> SQLite3</li>
+                <li><i class="fas fa-database"></i> Firebase</li>
+              </ul>
+            </div>
+            <div class="skills-category">
+              <h4>Testing, Collaboration & Methodologies</h4>
+              <ul class="skills-list">
+                <li><i class="fas fa-vial"></i> Junit</li>
+                <li><i class="fas fa-code"></i> TDD</li>
+                <li><i class="fas fa-code"></i> Maven</li>
+                <li><i class="fab fa-jira"></i> Jira</li>
+                <li><i class="fab fa-confluence"></i> Confluence</li>
+                <li><i class="fas fa-project-diagram"></i> Scrum</li>
+                <li><i class="fas fa-brain"></i> Miro</li>
+                <li><i class="fab fa-slack"></i> Slack</li>
+              </ul>
+            </div>
+            <div class="skills-category">
+              <h4>Data Visualization & Machine Learning</h4>
+              <ul class="skills-list">
+                <li><ion-icon name="logo-tableau"></ion-icon> Tableau</li>
+                <li><i class="fas fa-chart-bar"></i> Chart.js</li>
+                <li><i class="fas fa-code"></i> Jupyter Notebook</li>
+                <li><i class="fas fa-code"></i> Spyder IDE</li>
+              </ul>
+            </div>
+            <div class="skills-category">
+              <h4>Language Skills</h4>
+              <ul class="skills-list">
+                <li><i class="fas fa-language"></i> Iloko (Mother tongue)</li>
+                <li><i class="fas fa-language"></i> English</li>
+                <li><i class="fas fa-language"></i> Finnish</li>
+                <li><i class="fas fa-language"></i> Tagalog</li>
+                <li><i class="fas fa-language"></i> Cebuano</li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!--===== Skills Section End =====-->
     <!--===== Footer Section Start =====-->
     <footer class="footer">
-        <div class="container">
-            <div class="row justify-content-center">
-                <p class="copyright-text">&copy; 2024 EJ Sobrepeña. All Rights Reserved.</p>
-            </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <p class="copyright-text">
+            &copy; 2024 EJ Sobrepeña. All Rights Reserved.
+          </p>
         </div>
+      </div>
     </footer>
     <!--===== Footer Section End =====-->
     <!--===== Main JS =====-->
     <script src="js/main.js"></script>
     <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
-</body>
-
+  </body>
 </html>
