@@ -1,6 +1,6 @@
 /*===== Google Fonts =====*/
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /*===== Global CSS =====*/
 html {
@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 16px;
@@ -74,7 +74,7 @@ img {
 }
 
 .section-title .main-title {
-  font-family: "DM Serif Text", serif;
+  font-family: 'DM Serif Text', serif;
   font-weight: 400;
   font-size: 35px;
   font-weight: 600;
@@ -129,7 +129,7 @@ img {
 }
 
 .navbar .logo a {
-  font-family: "DM Serif Text", serif;
+  font-family: 'DM Serif Text', serif;
   font-size: 24px;
   color: var(--main-color);
   font-weight: 600;
@@ -143,7 +143,7 @@ img {
 }
 
 .navbar .menu .nav-item .nav-link {
-  font-family: "DM Serif Text", serif;
+  font-family: 'DM Serif Text', serif;
   color: var(--white);
   font-size: 16px;
   font-weight: 600;
@@ -171,7 +171,7 @@ img {
 
 .navbar .nav-item .nav-link span::before {
   position: absolute;
-  content: "";
+  content: '';
   /* width: 0; */
   height: 2px;
   background-color: var(--white);
@@ -180,7 +180,7 @@ img {
 
 .navbar .nav-item .nav-link span::after {
   position: absolute;
-  content: "";
+  content: '';
   /* width: 0; */
   height: 2px;
   background-color: var(--white);
@@ -319,7 +319,7 @@ img {
 
 .header-hero-shape::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 1000%;
   height: 100%;
   background-color: var(--main-color);
@@ -362,7 +362,7 @@ img {
 
 /*===== About =====*/
 .about-section .about-content {
-  max-width: 65ch;
+  max-width: 80ch;
   padding: 25px;
 }
 
@@ -499,6 +499,9 @@ img {
 }
 
 .skills-list li {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--main-color);
   color: var(--white);
   padding: 8px 10px;
@@ -509,8 +512,8 @@ img {
   gap: 5px;
 }
 
-.skills-list li i {
-  font-size: 20px;
+.skills-list li i::before {
+  font-size: 24px;
 }
 
 /*footer*/
